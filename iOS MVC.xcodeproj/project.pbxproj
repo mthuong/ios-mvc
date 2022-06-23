@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0317B06128640E9100E5C0AA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0317B06028640E9100E5C0AA /* ResponseModel.swift */; };
+		0317B0632864135700E5C0AA /* JSONNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0317B0622864135700E5C0AA /* JSONNull.swift */; };
+		033755C52862C2530051AA42 /* GetBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033755C42862C2530051AA42 /* GetBooksService.swift */; };
 		0348E0F52860273500CB8EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E0F42860273500CB8EC7 /* AppDelegate.swift */; };
 		0348E0F72860273500CB8EC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E0F62860273500CB8EC7 /* SceneDelegate.swift */; };
 		0348E0F92860273500CB8EC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E0F82860273500CB8EC7 /* ViewController.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0317B06028640E9100E5C0AA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		0317B0622864135700E5C0AA /* JSONNull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONNull.swift; sourceTree = "<group>"; };
+		033755C42862C2530051AA42 /* GetBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksService.swift; sourceTree = "<group>"; };
 		0348E0F12860273500CB8EC7 /* iOS MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0348E0F42860273500CB8EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0348E0F62860273500CB8EC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033755C32862C2180051AA42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0317B06028640E9100E5C0AA /* ResponseModel.swift */,
+				0317B0622864135700E5C0AA /* JSONNull.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0348E0E82860273500CB8EC7 = {
 			isa = PBXGroup;
 			children = (
@@ -180,8 +195,9 @@
 		0348E1262860293500CB8EC7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				033755C32862C2180051AA42 /* Models */,
 				039378F72861718A00FC608B /* Core */,
-				039378F82861727A00FC608B /* NetworkService.swift */,
+				033755C42862C2530051AA42 /* GetBooksService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,7 +214,6 @@
 		0348E12C28602F5000CB8EC7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0348E12D28602F6300CB8EC7 /* Encoder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -206,8 +221,10 @@
 		039378F72861718A00FC608B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0348E12D28602F6300CB8EC7 /* Encoder.swift */,
 				039378F128616CFA00FC608B /* NetworkSession.swift */,
 				039378F328616DFE00FC608B /* URLRequestFactory.swift */,
+				039378F82861727A00FC608B /* NetworkService.swift */,
 				039378F528616E4800FC608B /* Endpoint.swift */,
 			);
 			path = Core;
@@ -475,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0317B0632864135700E5C0AA /* JSONNull.swift in Sources */,
 				039378F92861727A00FC608B /* NetworkService.swift in Sources */,
 				0348E0F92860273500CB8EC7 /* ViewController.swift in Sources */,
 				039378F628616E4800FC608B /* Endpoint.swift in Sources */,
@@ -482,8 +500,10 @@
 				0348E12E28602F6300CB8EC7 /* Encoder.swift in Sources */,
 				0348E129286029CD00CB8EC7 /* BaseModel.swift in Sources */,
 				039378F228616CFA00FC608B /* NetworkSession.swift in Sources */,
+				033755C52862C2530051AA42 /* GetBooksService.swift in Sources */,
 				0348E12B286029ED00CB8EC7 /* Book.swift in Sources */,
 				039378F428616DFE00FC608B /* URLRequestFactory.swift in Sources */,
+				0317B06128640E9100E5C0AA /* ResponseModel.swift in Sources */,
 				0348E0F72860273500CB8EC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,9 +35,9 @@ extension Endpoint {
 struct StandardEndpoint: Endpoint {
     public var path: String
     public var queryItems: [URLQueryItem]? = nil
-    public var scheme: String? = "http"
-    public var host: String? = "localhost"
-    public var port: Int? = 8080
+    public var scheme: String? = "https"
+    public var host: String? = "openlibrary.org"
+    public var port: Int?
     
     public init(path: String) {
         self.path = path
