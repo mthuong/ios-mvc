@@ -22,6 +22,8 @@
 		0348E129286029CD00CB8EC7 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E128286029CD00CB8EC7 /* BaseModel.swift */; };
 		0348E12B286029ED00CB8EC7 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E12A286029ED00CB8EC7 /* Book.swift */; };
 		0348E12E28602F6300CB8EC7 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348E12D28602F6300CB8EC7 /* Encoder.swift */; };
+		036B1F0A28738139007B10A8 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B1F0928738139007B10A8 /* UIViewController+Alert.swift */; };
+		036B1F0E2873832A007B10A8 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B1F0D2873832A007B10A8 /* BookCell.swift */; };
 		039378F228616CFA00FC608B /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039378F128616CFA00FC608B /* NetworkSession.swift */; };
 		039378F428616DFE00FC608B /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039378F328616DFE00FC608B /* URLRequestFactory.swift */; };
 		039378F628616E4800FC608B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039378F528616E4800FC608B /* Endpoint.swift */; };
@@ -68,6 +70,8 @@
 		0348E128286029CD00CB8EC7 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		0348E12A286029ED00CB8EC7 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0348E12D28602F6300CB8EC7 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		036B1F0928738139007B10A8 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		036B1F0D2873832A007B10A8 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		039378F128616CFA00FC608B /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		039378F328616DFE00FC608B /* URLRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
 		039378F528616E4800FC608B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				0348E0F42860273500CB8EC7 /* AppDelegate.swift */,
 				0348E0F62860273500CB8EC7 /* SceneDelegate.swift */,
 				0348E0F82860273500CB8EC7 /* ViewController.swift */,
+				036B1F0B28738319007B10A8 /* Views */,
 				0348E12C28602F5000CB8EC7 /* Utils */,
 				0348E1272860294300CB8EC7 /* Models */,
 				0348E1262860293500CB8EC7 /* Services */,
@@ -214,8 +219,25 @@
 		0348E12C28602F5000CB8EC7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				036B1F0928738139007B10A8 /* UIViewController+Alert.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		036B1F0B28738319007B10A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				036B1F0C2873831F007B10A8 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		036B1F0C2873831F007B10A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				036B1F0D2873832A007B10A8 /* BookCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		039378F72861718A00FC608B /* Core */ = {
@@ -501,10 +523,12 @@
 				0348E129286029CD00CB8EC7 /* BaseModel.swift in Sources */,
 				039378F228616CFA00FC608B /* NetworkSession.swift in Sources */,
 				033755C52862C2530051AA42 /* GetBooksService.swift in Sources */,
+				036B1F0E2873832A007B10A8 /* BookCell.swift in Sources */,
 				0348E12B286029ED00CB8EC7 /* Book.swift in Sources */,
 				039378F428616DFE00FC608B /* URLRequestFactory.swift in Sources */,
 				0317B06128640E9100E5C0AA /* ResponseModel.swift in Sources */,
 				0348E0F72860273500CB8EC7 /* SceneDelegate.swift in Sources */,
+				036B1F0A28738139007B10A8 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
